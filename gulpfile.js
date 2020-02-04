@@ -45,8 +45,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/bootstrap/bootstrap.min.js',
-		'app/libs/nice-select/js/jquery.nice-select.min.js',
+		'app/libs/owl-carousel/dist/owl.carousel.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

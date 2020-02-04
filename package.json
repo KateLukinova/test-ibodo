@@ -26,6 +26,7 @@
 	},
 	"dependencies": {
 		"npm": "^6.5.0",
+		"owl.carousel": "^2.3.4",
 		"to": "^0.2.9",
 		"update": "^0.7.4"
 	}
