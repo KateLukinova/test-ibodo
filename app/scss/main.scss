@@ -13,6 +13,16 @@ body {
 	background-size: cover;
 	background-position: center;
 	line-height: 1.3;
+	margin: 0;
+}
+
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.item,
+.owl-item, .owl-item div {
+	height: 100%;
+	object-fit: cover;
 }
 
 a {
@@ -113,6 +123,9 @@ a.btn {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
+		.logo {
+			display: none;
+		}
 	}
 	.header__nav {
 		margin-top: -11px;
@@ -407,5 +420,39 @@ footer {
 	width: 100%;
 }
 
+.box-mobile {
+	display: none;
+}
+.popup-fade {
+	display: none;
+}
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: 99;
+}
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	width: 360px;
+	min-height: 320px;
+	background: #fff;
+	z-index: 100;
+	opacity: 1;
+}
+.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
 
 @import "media"; // Always at the end
